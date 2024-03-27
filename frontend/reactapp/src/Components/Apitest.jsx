@@ -6,7 +6,7 @@ function Apitest() {
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-      axios.get('http://127.0.0.1:8000//api/hello-world/')
+      axios.get('http://127.0.0.1:8000/api/hello-world/')
         .then(response => {
           setMessage(response.data.message);
         })
